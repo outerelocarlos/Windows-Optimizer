@@ -1,0 +1,822 @@
+﻿##########
+##
+## Windows Optimizer - Level 2 - Recommended (Laptop) Preset
+##
+## Original Author: Disassembler <disassembler@dasm.cz>
+## Original Author Source: https://github.com/Disassembler0/Win10-Initial-Setup-Script (Version: v3.10, 2020-07-15)
+## 
+## Continued and improved by Carlos Outerelo <outerelocarlos@gmail.com>
+## New Source: https://github.com/outerelocarlos/Windows-Optimizer
+##
+##########
+
+### Require administrator privileges ###
+
+	RequireAdmin
+	CreateRestorePoint
+
+### O&OShutUp10 Setup ###
+
+	ShutUpStandard 
+	# ShutUpHardcore 
+	# ShutUpCustom 
+
+	# ShutUpStandard_Reverse
+	# ShutUpHardcore_Reverse
+	# ShutUpCustom_Reverse
+
+### Privacy Tweaks ###
+
+	DisableTelemetry
+	# EnableTelemetry
+
+	DisableThirdPartyTelemetry
+	# EnableThirdPartyTelemetry
+	
+	DisableCortana
+	# EnableCortana
+	
+	DisableWiFiSense
+	# EnableWiFiSense
+	
+	# DisableSmartScreen
+	# EnableSmartScreen
+	
+	DisableWebSearch
+	# EnableWebSearch
+	
+	DisableAppSuggestions
+	# EnableAppSuggestions
+	
+	# DisableActivityHistory
+	# EnableActivityHistory
+	
+	# DisableSensors
+	# EnableSensors
+	
+	# DisableLocation
+	EnableLocation
+	
+	# DisableFindMyDevice
+	EnableFindMyDevice
+	
+	# DisableMapUpdates
+	# EnableMapUpdates
+	
+	# DisableFeedback
+	# EnableFeedback
+	
+	DisableTailoredExperiences
+	# EnableTailoredExperiences
+	
+	DisableAdvertisingID
+	# EnableAdvertisingID
+	
+	# DisableWebLangList
+	# EnableWebLangList
+	
+	# DisableBiometrics
+	# EnableBiometrics
+	
+	# DisableCamera
+	# EnableCamera
+	
+	# DisableMicrophone
+	# EnableMicrophone
+	
+	DisableErrorReporting
+	# EnableErrorReporting
+	
+	# SetP2PUpdateDisable
+	SetP2PUpdateLocal
+	# SetP2PUpdateInternet
+	
+	DisableAutoLogger
+	# EnableAutoLogger
+	
+	DisableDiagTrack
+	# EnableDiagTrack
+		
+	# DisableWAPPush
+	# EnableWAPPush
+	
+	# DisableClearRecentFiles
+	# EnableClearRecentFiles
+	
+	# DisableRecentFiles
+	# EnableRecentFiles
+	
+### UWP Privacy Tweaks ###
+
+	# DisableUWPBackgroundApps
+	# EnableUWPBackgroundApps
+
+	# DisableUWPVoiceActivation
+	# EnableUWPVoiceActivation
+
+	# DisableUWPNotifications
+	# EnableUWPNotifications
+
+	DisableUWPAccountInfo
+	# EnableUWPAccountInfo
+
+	# DisableUWPContacts
+	# EnableUWPContacts
+
+	# DisableUWPCalendar
+	# EnableUWPCalendar
+
+	# DisableUWPPhoneCalls
+	# EnableUWPPhoneCalls
+
+	# DisableUWPCallHistory
+	# EnableUWPCallHistory
+
+	# DisableUWPEmail
+	# EnableUWPEmail
+
+	# DisableUWPTasks
+	# EnableUWPTasks
+
+	# DisableUWPMessaging
+	# EnableUWPMessaging
+
+	# DisableUWPRadios
+	# EnableUWPRadios
+
+	# DisableUWPOtherDevices
+	# EnableUWPOtherDevices
+
+	DisableUWPDiagInfo
+	# EnableUWPDiagInfo
+
+	# DisableUWPFileSystem
+	# EnableUWPFileSystem
+
+	# DisableUWPSwapFile
+	# EnableUWPSwapFile
+
+### Security Tweaks ###
+
+	SetUACLow
+	# SetUACHigh
+
+	# DisableSharingMappedDrives
+	# EnableSharingMappedDrives
+	
+	# DisableAdminShares
+	# EnableAdminShares
+
+	# DisableFirewall
+	# EnableFirewall
+
+	# HideDefenderTrayIcon
+	# ShowDefenderTrayIcon
+
+	# DisableDefender
+	# EnableDefender
+
+	# DisableDefenderCloud
+	# EnableDefenderCloud
+
+	# DisableCtrldFolderAccess
+	# EnableCtrldFolderAccess
+
+	# DisableCIMemoryIntegrity
+	# EnableCIMemoryIntegrity
+
+	# DisableDefenderAppGuard
+	# EnableDefenderAppGuard
+
+	# HideAccountProtectionWarn
+	# ShowAccountProtectionWarn
+
+	# DisableDownloadBlocking
+	# EnableDownloadBlocking
+
+	# DisableScriptHost
+	# EnableScriptHost
+
+	# DisableDotNetStrongCrypto
+	EnableDotNetStrongCrypto
+
+	# DisableMeltdownCompatFlag
+	# EnableMeltdownCompatFlag
+
+	# DisableF8BootMenu
+	EnableF8BootMenu
+
+	# DisableBootRecovery
+	EnableBootRecovery
+
+	# DisableRecoveryAndReset
+	EnableRecoveryAndReset
+
+	# SetDEPOptOut
+	# SetDEPOptIn
+
+### Network Tweaks ###
+
+	# SetCurrentNetworkPrivate
+	# SetCurrentNetworkPublic
+
+	# SetUnknownNetworksPrivate
+	# SetUnknownNetworksPublic
+
+	# DisableNetDevicesAutoInst
+	# EnableNetDevicesAutoInst
+
+	# DisableHomeGroups
+	# EnableHomeGroups
+
+	# [This function is not working as intended due to a Windows bug]
+	# [This function is not working as intended due to a Windows bug]
+
+	# DisableSMBServer
+	# EnableSMBServer
+
+	# DisableNetBIOS
+	# EnableNetBIOS
+
+	# DisableLLMNR
+	# EnableLLMNR
+
+	# DisableLLDP
+	# EnableLLDP
+
+	# DisableLLTD
+	# EnableLLTD
+
+	# DisableMSNetClient
+	# EnableMSNetClient
+
+	# DisableQoS
+	# EnableQoS
+
+	# DisableIPv4
+	# EnableIPv4
+
+	# DisableIPv6
+	# EnableIPv6
+
+	# DisableNCSIProbe
+	# EnableNCSIProbe
+
+	# DisableConnectionSharing
+	# EnableConnectionSharing
+
+	# [This function is not working as intended due to a Windows bug]
+	# [This function is not working as intended due to a Windows bug]
+
+	# DisableRemoteDesktop
+	EnableRemoteDesktop
+	
+	# DisableRemoteDesktopNLA
+	EnableRemoteDesktopNLA
+	
+	IncreaseIRPStackSize
+	# DefaultIRPStackSize
+
+### Service Tweaks ###
+
+	# DisableUpdateMSRT
+	# EnableUpdateMSRT
+
+	# DisableUpdateDriver
+	# EnableUpdateDriver
+
+	# DisableUpdateMSProducts
+	# EnableUpdateMSProducts
+
+	DisableUpdateAutoDownload
+	# EnableUpdateAutoDownload
+
+	DisableUpdateRestart
+	# EnableUpdateRestart
+	
+	# DisableDelayedFeatureUpdates
+	# EnableDelayedFeatureUpdates
+	
+	# DisableW11_TPMRequirement
+	# EnableW11_TPMRequirement
+	
+	DisableMaintenanceWakeUp
+	# EnableMaintenanceWakeUp
+
+	# DisableLogin
+	# EnableLogin
+
+	# DisableAutoRestartLogin
+	# EnableAutoRestartLogin
+
+	# DisableSharedExperiences
+	# EnableSharedExperiences
+
+	# DisableClipboardHistory
+	# EnableClipboardHistory
+
+	# DisableAutoplay
+	# EnableAutoplay
+
+	# DisableAutorun
+	# EnableAutorun
+
+	# DisableRestorePoints
+	EnableRestorePoints
+
+	DisableStorageSense
+	# EnableStorageSense
+
+	# DisableDefragmentation
+	EnableDefragmentation
+
+	DisableSuperfetch
+	# EnableSuperfetch
+
+	# DisableIndexing
+	# EnableIndexing
+
+	# DisableRecycleBin
+	# EnableRecycleBin
+
+	# DisableNTFSLongPaths
+	EnableNTFSLongPaths
+
+	# DisableNTFSLastAccess
+	# EnableNTFSLastAccess
+
+	# SetBIOSTimeLocal
+	# SetBIOSTimeUTC
+
+	# DisableHibernation
+	# EnableHibernation
+
+	# DisableSleepButton
+	# EnableSleepButton
+
+	# DisableSleepTimeout
+	# EnableSleepTimeout
+
+	DisableFastStartup
+	# EnableFastStartup
+
+	# DisableAutoRebootOnCrash
+	# EnableAutoRebootOnCrash
+		
+	# DisableHAGS
+	# EnableHAGS
+
+	OptimizeServiceHost
+	# DefaultServiceHost
+
+	# RestoreMissingPowerPlans
+
+### UI Tweaks ###
+
+	# DisableActionCenter
+	# EnableActionCenter
+
+	# DisableLockScreen
+	# EnableLockScreen
+
+	# DisableLockScreenRS1
+	# EnableLockScreenRS1
+
+	# HideNetworkFromLockScreen
+	# ShowNetworkOnLockScreen
+
+	# HideShutdownFromLockScreen
+	# ShowShutdownOnLockScreen
+
+	# DisableLockScreenBlur
+	# EnableLockScreenBlur
+
+	DisableAeroShake
+	# EnableAeroShake
+
+	DisableAccessibilityKeys
+	# EnableAccessibilityKeys
+
+	# HideTaskManagerDetails
+	ShowTaskManagerDetails
+
+	# HideFileOperationsDetails
+	ShowFileOperationsDetails
+
+	# DisableFileDeleteConfirm
+	# EnableFileDeleteConfirm
+
+	# HideTaskbarSearch
+	# ShowTaskbarSearchIcon
+	# ShowTaskbarSearchBox
+
+	# HideTaskView
+	# ShowTaskView
+
+	# ShowSmallTaskbarIcons
+	# ShowLargeTaskbarIcons
+
+	# SetTaskbarCombineAlways
+	# SetTaskbarCombineWhenFull
+	# SetTaskbarCombineNever
+	
+	# [This function is not working as intended due to a Windows bug]
+	# [This function is not working as intended due to a Windows bug]
+	# [This function is not working as intended due to a Windows bug]
+	
+	DisableNewsAndInterests
+	# EnableNewsAndInterests
+	
+	HideMeetNowFromTaskbar
+	# ShowMeetNowInTaskbar
+
+	HideTaskbarPeopleIcon
+	# ShowTaskbarPeopleIcon
+
+	# HideTrayIcons
+	# ShowTrayIcons
+
+	# HideSecondsFromTaskbar
+	# ShowSecondsInTaskbar
+
+	DisableSearchAppInStore
+	# EnableSearchAppInStore
+
+	DisableNewAppPrompt
+	# EnableNewAppPrompt
+
+	# HideRecentlyAddedApps
+	# ShowRecentlyAddedApps
+
+	# HideMostUsedApps
+	# ShowMostUsedApps
+
+	# SetWinXMenuPowerShell
+	# SetWinXMenuCmd
+
+	# SetControlPanelSmallIcons
+	# SetControlPanelLargeIcons
+	# SetControlPanelCategories
+
+	# DisableShortcutInName
+	# EnableShortcutInName
+
+	# HideShortcutArrow
+	# ShowShortcutArrow
+
+	# SetVisualFXAppearance
+	# SetVisualFXPerformance
+
+	# DisableTitleBarColor
+	# EnableTitleBarColor
+
+	# SetAppsDarkMode
+	# SetAppsLightMode
+
+	# SetSystemDarkMode
+	# SetSystemLightMode
+
+	# [Deprecated function]
+	# [Deprecated function]
+
+	# DisableNumlock
+	EnableNumlock
+
+	DisableEnhPointerPrecision
+	# EnableEnhPointerPrecision
+
+	# SetSoundSchemeNone
+	# SetSoundSchemeDefault
+
+	# DisableStartupSound
+	# EnableStartupSound
+
+	# DisableChangingSoundScheme
+	# EnableChangingSoundScheme
+
+	# DisableVerboseStatus
+	EnableVerboseStatus
+
+	# DisableF1HelpKey
+	# EnableF1HelpKey
+
+### Explorer UI Tweaks ###
+
+	# HideExplorerTitleFullPath
+	# ShowExplorerTitleFullPath
+
+	# HideKnownExtensions
+	ShowKnownExtensions
+
+	# HideHiddenFiles
+	# ShowHiddenFiles
+
+	# HideSuperHiddenFiles
+	# ShowSuperHiddenFiles
+
+	# HideEmptyDrives
+	# ShowEmptyDrives
+
+	# HideFolderMergeConflicts
+	# ShowFolderMergeConflicts
+	
+	# DisableDoForAllCopyPaste
+	# EnableDoForAllCopyPaste
+
+	# DisableNavPaneExpand
+	# EnableNavPaneExpand
+
+	# HideNavPaneAllFolders
+	# ShowNavPaneAllFolders
+
+	# HideNavPaneLibraries
+	# ShowNavPaneLibraries
+
+	# DisableFldrSeparateProcess
+	# EnableFldrSeparateProcess
+
+	# DisableRestoreFldrWindows
+	# EnableRestoreFldrWindows
+
+	# HideEncCompFilesColor
+	# ShowEncCompFilesColor
+	
+	# DisableSharingWizard
+	# EnableSharingWizard
+
+	# HideSelectCheckboxes
+	# ShowSelectCheckboxes
+
+	HideSyncNotifications
+	# ShowSyncNotifications
+
+	# HideRecentShortcuts
+	# ShowRecentShortcuts
+
+	# SetExplorerThisPC
+	# SetExplorerQuickAccess
+
+	# HideQuickAccess
+	# ShowQuickAccess
+
+	# HideRecycleBinFromDesktop
+	# ShowRecycleBinOnDesktop
+
+	# HideThisPCFromDesktop
+	# ShowThisPCOnDesktop
+
+	# HideUserFolderFromDesktop
+	# ShowUserFolderOnDesktop
+
+	# HideControlPanelFromDesktop
+	# ShowControlPanelOnDesktop
+
+	# HideNetworkFromDesktop
+	# ShowNetworkOnDesktop
+
+	# HideDesktopIcons
+	# ShowDesktopIcons
+
+	# HideBuildNumberFromDesktop
+	# ShowBuildNumberOnDesktop
+
+	# HideDesktopFromThisPC
+	# ShowDesktopInThisPC
+
+	# HideDesktopFromExplorer
+	# ShowDesktopInExplorer
+
+	# HideDocumentsFromThisPC
+	# ShowDocumentsInThisPC
+
+	# HideDocumentsFromExplorer
+	# ShowDocumentsInExplorer
+
+	# HideDownloadsFromThisPC
+	# ShowDownloadsInThisPC
+
+	# HideDownloadsFromExplorer
+	# ShowDownloadsInExplorer
+
+	# HideMusicFromThisPC
+	# ShowMusicInThisPC
+
+	# HideMusicFromExplorer
+	# ShowMusicInExplorer
+
+	# HidePicturesFromThisPC
+	# ShowPicturesInThisPC
+
+	# HidePicturesFromExplorer
+	# ShowPicturesInExplorer
+
+	# HideVideosFromThisPC
+	# ShowVideosInThisPC
+
+	# HideVideosFromExplorer
+	# ShowVideosInExplorer
+
+	Hide3DObjectsFromThisPC
+	# Show3DObjectsInThisPC
+
+	Hide3DObjectsFromExplorer
+	# Show3DObjectsInExplorer
+
+	# HideNetworkFromExplorer
+	# ShowNetworkInExplorer
+
+	# HideIncludeInLibraryMenu
+	# ShowIncludeInLibraryMenu
+
+	# HideGiveAccessToMenu
+	# ShowGiveAccessToMenu
+
+	# HideShareMenu
+	# ShowShareMenu
+
+	# DisableThumbnails
+	# EnableThumbnails
+
+	# DisableThumbnailCache
+	# EnableThumbnailCache
+
+	# DisableThumbsDBOnNetwork
+	# EnableThumbsDBOnNetwork
+	
+	# MenuShowDelay_Default
+	# MenuShowDelay_200
+	# MenuShowDelay_100
+	# MenuShowDelay_50
+	MenuShowDelay_20 
+
+### Windows 11 Tweaks ###
+	
+	# SetStartMenuLeft
+	# SetStartMenuCenter
+	
+	SetClassicContextMenu
+	# SetModernContextMenu
+
+	# DisableExplorerCompactView
+	EnableExplorerCompactView
+
+	# DisableExplorerRibbonBar
+	# EnableExplorerRibbonBar
+	
+	HideChatFromTaskbar
+	# ShowChatInTaskbar
+
+	HideWidgetsFromTaskbar
+	# ShowWidgetsInTaskbar
+
+### Application Tweaks ###
+
+	DisableOneDrive
+	# EnableOneDrive
+
+	UninstallOneDrive
+	# InstallOneDrive
+
+	# DisableTeamsAutoStart
+	# EnableTeamsAutoStart
+
+	# UninstallTeams
+	# InstallTeams
+
+	UninstallWorstMsftBloat
+	# InstallWorstMsftBloat
+
+	# UninstallBestMsftBloat
+	# InstallBestMsftBloat
+	
+	# UninstallCustomMsftBloat
+	# InstallCustomMsftBloat
+
+	UninstallWorstThirdPartyBloat
+	# InstallWorstThirdPartyBloat
+
+	# UninstallBestThirdPartyBloat
+	# InstallBestThirdPartyBloat
+	
+	# UninstallCustomThirdPartyBloat
+	# InstallCustomThirdPartyBloat
+
+	# UninstallWindowsStore
+	# InstallWindowsStore
+
+	# DisableXboxFeatures
+	# EnableXboxFeatures
+
+	DisableFullscreenOptims
+	# EnableFullscreenOptims
+
+	# DisableAdobeFlash
+	# EnableAdobeFlash
+	
+	# DisableEdgePreload
+	# EnableEdgePreload
+
+	DisableEdgeShortcutCreation
+	# EnableEdgeShortcutCreation
+
+	# DisableIEFirstRun
+	# EnableIEFirstRun
+
+	# DisableFirstLogonAnimation
+	# EnableFirstLogonAnimation
+
+	# DisableMediaSharing
+	# EnableMediaSharing
+
+	# DisableMediaOnlineAccess
+	# EnableMediaOnlineAccess
+
+	# DisableDeveloperMode
+	# EnableDeveloperMode
+
+	# [This function is not working as intended due to a Windows bug]
+	# [This function is not working as intended due to a Windows bug]
+
+	# [This function is not working as intended due to a Windows bug]
+	# [This function is not working as intended due to a Windows bug]
+
+	# UninstallWorkFolders
+	# InstallWorkFolders
+
+	# [This function is not working as intended due to a Windows bug]
+	# [This function is not working as intended due to a Windows bug]
+
+	# [This function is not working as intended due to a Windows bug]
+	# [This function is not working as intended due to a Windows bug]
+
+	# UninstallPowerShellV2
+	# InstallPowerShellV2
+
+	# [This function is not working as intended due to a Windows bug]	
+	# [This function is not working as intended due to a Windows bug]
+
+	# UninstallLinuxSubsystem
+	# InstallLinuxSubsystem
+
+	# UninstallHyperV
+	# InstallHyperV
+
+	# [This function is not working as intended due to a Windows bug]
+	# [This function is not working as intended due to a Windows bug]
+
+	# [This function is not working as intended due to a Windows bug]
+	# [This function is not working as intended due to a Windows bug]
+
+	# UninstallTelnetClient
+	# InstallTelnetClient
+
+	# [This function is not working as intended due to a Windows bug]
+	# [This function is not working as intended due to a Windows bug]
+
+	# UnsetPhotoViewerAssociation
+	# SetPhotoViewerAssociation
+
+	# RemovePhotoViewerOpenWith
+	# AddPhotoViewerOpenWith
+
+	# UninstallPDFPrinter
+	InstallPDFPrinter
+
+	# UninstallXPSPrinter
+	# InstallXPSPrinter
+
+	# RemoveFaxPrinter
+	# AddFaxPrinter
+
+	# [This function is not working as intended due to a Windows bug]
+	# [This function is not working as intended due to a Windows bug]
+
+### Server Specific Tweaks ###
+
+	# HideServerManagerOnLogin
+	# ShowServerManagerOnLogin
+
+	# DisableShutdownTracker
+	# EnableShutdownTracker
+
+	# DisablePasswordPolicy
+	# EnablePasswordPolicy
+
+	# DisableCtrlAltDelLogin
+	# EnableCtrlAltDelLogin
+
+	# DisableIEEnhancedSecurity
+	# EnableIEEnhancedSecurity
+
+	# DisableAudio
+	# EnableAudio
+
+### Unpinning ###
+
+	# UnpinStartMenuTiles
+	# UnpinTaskbarIcons
+
+### The End ###
+
+	WaitForY
+	Restart
