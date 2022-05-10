@@ -308,6 +308,8 @@ $outerelocarlos = @(
 	'SetControlPanelSmallIcons'
 	'DisableShortcutInName'
 	'HideShortcutArrow'
+	'SetAppsDarkMode'
+	'SetSystemDarkMode'
 	'EnableNumlock'
 	'DisableEnhPointerPrecision'
 	'EnableVerboseStatus'

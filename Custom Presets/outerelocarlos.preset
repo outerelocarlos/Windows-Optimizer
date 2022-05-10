@@ -476,10 +476,10 @@
 	# DisableTitleBarColor
 	# EnableTitleBarColor
 
-	# SetAppsDarkMode
+	SetAppsDarkMode
 	# SetAppsLightMode
 
-	# SetSystemDarkMode
+	SetSystemDarkMode
 	# SetSystemLightMode
 
 	# [Deprecated function]
