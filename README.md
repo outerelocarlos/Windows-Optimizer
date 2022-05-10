@@ -91,6 +91,8 @@ Various easy-to-apply tweaks have been provided so that users can fine-tune thei
 
 * **Disable Login / Enable Login**: disables (or re-enables) user login at system boot, when waking up the system and when waking up from screen saver mode.
 
+* **Disable Network Discovery and file sharing / Enable Network Discovery and file sharing**: disables (or re-enables) Network discovery and file/printer sharing, allowing or disallowing the computer to find and interact with other computers and devices on the network, sharing files and printers remotely.
+
 * **Disable OneDrive / Enable OneDrive**: disables (or re-enables) and removes (or reinstalls) OneDrive from the system.
 
 * **Disable Security Prompts and Blocks / Enable Security Prompts and Blocks**: sometimes Microsoft protects the user through security prompts, even going as far as blocking a given download if Defender does not trust its content or origins. This tweak collection disables (or enables) those security features.
@@ -632,6 +634,10 @@ Note that both functions make use of the "Set-SmbServerConfiguration" command, w
 * `DisableRemoteDesktop` / `EnableRemoteDesktop`: Disables or enables the Remote Desktop feature.
 
 * `DisableRemoteDesktopNLA` / `EnableRemoteDesktopNLA`: Disables or enables Network Level Authentication (NLA) for Remote Desktop.
+
+* `DisableNetworkDiscovery` / `EnableNetworkDiscovery`: Disables or enables Network Discovery, allowing the PC to find and interact with other computers and devices on the network (and vice-versa).
+
+* `DisableFileAndPrinterSharing` / `EnableFileAndPrinterSharing`: Disables or enables file and printer sharing over the network.
 
 * `IncreaseIRPStackSize` / `DefaultIRPStackSize`: Increases the IRP stack size for a faster network within Windows (or sets it back to default).
 

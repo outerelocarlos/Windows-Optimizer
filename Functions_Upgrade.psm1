@@ -500,6 +500,30 @@ Function EnableRemoteDesktopNLA {
 	Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp" -Name "UserAuthentication" -Type DWord -Value 1
 }
 
+# Disables Network Discovery
+Function DisableNetworkDiscovery {
+	Write-Output "Disabling Network Discovery..."
+	netsh advfirewall firewall set rule group=”network discovery” new enable=no
+}
+
+# Enables Network Discovery
+Function EnableNetworkDiscovery {
+	Write-Output "Enabling Network Discovery..."
+	netsh advfirewall firewall set rule group=”network discovery” new enable=yes
+}
+
+# Disables file and printer sharing over the network
+Function DisableFileAndPrinterSharing {
+	Write-Output "Disabling file and printer sharing over the network..."
+	netsh advfirewall firewall set rule group="File and Printer Sharing" new enable=no
+}
+
+# Enables file and printer sharing over the network
+Function EnableFileAndPrinterSharing {
+	Write-Output "Enabling file and printer sharing over the network..."
+	netsh advfirewall firewall set rule group="File and Printer Sharing" new enable=yes
+}
+
 # Increases IRPStackSize for a faster network within Windows
 Function IncreaseIRPStackSize {
 	Write-Output "Increasing IRPStackSize for a faster network within Windows..."

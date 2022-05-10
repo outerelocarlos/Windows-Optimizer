@@ -274,6 +274,12 @@
 	DisableRemoteDesktopNLA
 	EnableRemoteDesktopNLA
 	
+	DisableNetworkDiscovery
+	EnableNetworkDiscovery
+
+	DisableFileAndPrinterSharing
+	EnableFileAndPrinterSharing
+
 	IncreaseIRPStackSize
 	DefaultIRPStackSize
 

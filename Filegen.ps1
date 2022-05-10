@@ -267,8 +267,10 @@ $outerelocarlos = @(
 	'EnableBootRecovery'
 	'EnableRecoveryAndReset'
 
-	'IncreaseIRPStackSize'
 	'EnableRemoteDesktop'
+	'EnableNetworkDiscovery'
+	'EnableFileAndPrinterSharing'
+	'IncreaseIRPStackSize'
 	'DisableUpdateAutoDownload'
 	'DisableUpdateRestart'
 	'DisableMaintenanceWakeUp'
@@ -341,6 +343,8 @@ $outerelocarlos = @(
 )
 
 $basic_desktop = $basic + @(
+	'EnableNetworkDiscovery'
+	'EnableFileAndPrinterSharing'
 	'DisableHibernation'
 )
 
@@ -350,6 +354,8 @@ $basic_laptop = $basic + @(
 )
 
 $recommended_desktop = $recommended + @(
+	'EnableNetworkDiscovery'
+	'EnableFileAndPrinterSharing'
 	'DisableHibernation'
 )
 
@@ -359,6 +365,8 @@ $recommended_laptop = $recommended + @(
 )
 
 $advanced_desktop = $advanced + @(
+	'EnableNetworkDiscovery'
+	'EnableFileAndPrinterSharing'
 	'DisableHibernation'
 )
 
@@ -438,12 +446,14 @@ Write-Host Building the premade tweaks...
 ($cmd_tweaks + 'UninstallWorstThirdPartyBloat UninstallBestThirdPartyBloat UninstallWorstMsftBloat UninstallBestMsftBloat DisableOneDrive UninstallOneDrive WaitForY Restart') | Set-Content ($folder_tweaks + "\Bloatware Uninstaller (Level 3 - Complete Removal).cmd")
 ($cmd_tweaks + 'DisableIndexing WaitForY Restart') | Set-Content ($folder_tweaks + "\Disable Indexing.cmd")
 ($cmd_tweaks + 'EnableIndexing WaitForY Restart') | Set-Content ($folder_tweaks + "\Enable Indexing.cmd")
+($cmd_tweaks + 'DisableLogin WaitForY Restart') | Set-Content ($folder_tweaks + "\Disable Login.cmd")
+($cmd_tweaks + 'EnableLogin WaitForY Restart') | Set-Content ($folder_tweaks + "\Enable Login.cmd")
+($cmd_tweaks + 'DisableNetworkDiscovery DisableFileAndPrinterSharing WaitForY Restart') | Set-Content ($folder_tweaks + "\Disable Network Discovery and file sharing.cmd")
+($cmd_tweaks + 'EnableNetworkDiscovery EnableFileAndPrinterSharing WaitForY Restart') | Set-Content ($folder_tweaks + "\Enable Network Discovery and file sharing.cmd")
 ($cmd_tweaks + 'DisableOneDrive UninstallOneDrive WaitForY Restart') | Set-Content ($folder_tweaks + "\Disable OneDrive.cmd")
 ($cmd_tweaks + 'EnableOneDrive InstallOneDrive WaitForY Restart') | Set-Content ($folder_tweaks + "\Enable OneDrive.cmd")
 ($cmd_tweaks + 'DisableSmartScreen SetUACLow DisableDownloadBlocking WaitForY Restart') | Set-Content ($folder_tweaks + "\Disable Security Prompts and Blocks.cmd")
 ($cmd_tweaks + 'EnableSmartScreen SetUACHigh EnableDownloadBlocking WaitForY Restart') | Set-Content ($folder_tweaks + "\Enable Security Prompts and Blocks.cmd")
-($cmd_tweaks + 'DisableLogin WaitForY Restart') | Set-Content ($folder_tweaks + "\Disable Login.cmd")
-($cmd_tweaks + 'EnableLogin WaitForY Restart') | Set-Content ($folder_tweaks + "\Enable Login.cmd")
 ($cmd_tweaks + 'DisableCortana DisableAppSuggestions DisableTailoredExperiences DisableAdvertisingID DisableErrorReporting DisableAutoLogger DisableDiagTrack WaitForY Restart') | Set-Content ($folder_tweaks + "\Disable Telemetry (Level 1 - Basic).cmd")
 ($cmd_tweaks + 'EnableCortana EnableAppSuggestions EnableTailoredExperiences EnableAdvertisingID EnableErrorReporting EnableAutoLogger EnableDiagTrack WaitForY Restart') | Set-Content ($folder_tweaks + "\Enable Telemetry (Level 1 - Basic).cmd")
 ($cmd_tweaks + 'ShutUpStandard DisableTelemetry DisableThirdPartyTelemetry DisableCortana DisableAppSuggestions DisableTailoredExperiences DisableAdvertisingID DisableErrorReporting DisableAutoLogger DisableDiagTrack WaitForY Restart') | Set-Content ($folder_tweaks + "\Disable Telemetry (Level 2 - Recommended).cmd")
