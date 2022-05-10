@@ -319,7 +319,7 @@
 	# EnableSharedExperiences
 
 	# DisableClipboardHistory
-	# EnableClipboardHistory
+	EnableClipboardHistory
 
 	# DisableAutoplay
 	# EnableAutoplay
