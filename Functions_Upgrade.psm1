@@ -1123,6 +1123,18 @@ Function EnableIndexing {
 	Start-Service "WSearch" -WarningAction SilentlyContinue
 }
 
+# Sets the Coordinated Universal Time (UTC) as the system's timezone
+Function SetTimeZoneUTC {
+	Write-Output "Setting the Coordinated Universal Time (UTC) as the system's timezone..."
+	Set-TimeZone -Id "UTC"
+}
+
+# Sets the Central Europe Standard Time (CEST) as the system's timezone
+Function SetTimeZoneCEST {
+	Write-Output "Setting the Central Europe Standard Time (CEST) as the system's timezone..."
+	Set-TimeZone -Id "Central Europe Standard Time"
+}
+
 # Disable Hardware Accelerated GPU Scheduling
 Function DisableHAGS {
 	Write-Output "Disabling Hardware Accelerated GPU Scheduling (HAGS)..."

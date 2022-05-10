@@ -354,6 +354,9 @@
 	# SetBIOSTimeLocal
 	# SetBIOSTimeUTC
 
+	# SetTimeZoneUTC
+	# SetTimeZoneCEST
+
 	DisableHibernation
 	# EnableHibernation
 

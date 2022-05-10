@@ -689,6 +689,8 @@ Note that both functions make use of the "Set-SmbServerConfiguration" command, w
 
 * `SetBIOSTimeLocal` / `SetBIOSTimeUTC`: Defines the BIOS time format. UTC ensures consistency with Linux-based dual boots.
 
+* `SetTimeZoneUTC` / `SetTimeZoneCEST`: Defines the system's timezone, hence the time displayed in the system clock.
+
 * `DisableHibernation` / `EnableHibernation`: Disables or enables the hibernation feature, which was designed for laptops to save power in a deeper state than "Sleep".
 
 * `DisableSleepButton` / `EnableSleepButton`: Disables or enables the sleep option within the power menu.

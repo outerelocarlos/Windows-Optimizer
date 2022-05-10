@@ -284,6 +284,7 @@ $outerelocarlos = @(
 	'EnableDefragmentation'
 	'DisableSuperfetch'
 	'EnableNTFSLongPaths'
+	'SetTimeZoneCEST'
 	'DisableHibernation'
 	'DisableFastStartup'
 	'EnableAutoRebootOnCrash'
