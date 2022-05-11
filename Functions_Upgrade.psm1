@@ -1644,10 +1644,12 @@ Function EnableTeamsAutoStart {
 
 # Uninstalls Microsoft Teams
 Function UninstallTeams {
+	Write-Output "Uninstalling Microsoft Teams..."
 	Get-AppxPackage "MicrosoftTeams" | Remove-AppxPackage
 }
 
 Function InstallTeams {
+	Write-Output "Installing OneDrive..."
 	Get-AppxPackage "MicrosoftTeams" | ForEach-Object {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
 }
 
