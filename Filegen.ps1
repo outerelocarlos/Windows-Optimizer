@@ -337,6 +337,7 @@ $outerelocarlos = @(
 
 	'DisableOneDrive'
 	'UninstallOneDrive'
+	'DisableTeamsAutoStart'
 	'UninstallCustomMsftBloat'
 	'UninstallCustomThirdPartyBloat'
 	'DisableFullscreenOptims'
